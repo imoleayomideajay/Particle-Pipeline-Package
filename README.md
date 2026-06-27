@@ -24,7 +24,9 @@ Takes a single SEM image and produces:
 ## Quick start
 
 ```bash
-pip install particle-pipeline
+git clone https://github.com/imoleayomideajay/Particle-Pipeline-Package.git
+cd Particle-Pipeline-Package
+pip install -e .
 ```
 
 ```python
@@ -89,14 +91,12 @@ measurement artefacts.
 ## Installation
 
 ```bash
-# From PyPI (once published)
-pip install particle-pipeline
-
-# From source
-git clone https://github.com/imoleayomide/particle-pipeline
-cd particle-pipeline
+git clone https://github.com/imoleayomideajay/Particle-Pipeline-Package.git
+cd Particle-Pipeline-Package
 pip install -e ".[dev]"
 ```
+
+**Citable archived release:** [10.5281/zenodo.20952534](https://doi.org/10.5281/zenodo.20952534)
 
 ## Running tests
 
@@ -139,12 +139,19 @@ results.save_report("output/") # PDF + CSV + figures + JSON
 
 ## Citation
 
-If you use this pipeline in your research, please cite:
+If you use this pipeline in your research, please cite the paper:
 
 > Ajayi I. (2025). From SEM Image to Particle Size Report: A Practical
 > Primer on Automated Segmentation, Cross-Technique Size Estimation, and
 > Metrologically Traceable Uncertainty Quantification.
 > *Journal of Microscopy* (Primers in Microscopy special issue).
+
+and/or the software directly:
+
+> Ajayi I. (2025). particle-pipeline (v1.2.0) [Software].
+> Zenodo. https://doi.org/10.5281/zenodo.20952534
+
+A machine-readable citation is also available in [`CITATION.cff`](CITATION.cff).
 
 ## Licence
 

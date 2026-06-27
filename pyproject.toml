@@ -54,10 +54,9 @@ docs = [
 particle-pipeline = "particle_pipeline.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/imoleayomide/particle-pipeline"
-Documentation = "https://particle-pipeline.readthedocs.io"
-Repository = "https://github.com/imoleayomide/particle-pipeline"
-Issues = "https://github.com/imoleayomide/particle-pipeline/issues"
+Homepage = "https://github.com/imoleayomideajay/Particle-Pipeline-Package"
+Repository = "https://github.com/imoleayomideajay/Particle-Pipeline-Package"
+Issues = "https://github.com/imoleayomideajay/Particle-Pipeline-Package/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
