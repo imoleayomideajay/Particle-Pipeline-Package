@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "particle-pipeline"
+version = "1.2.0"
+description = "Automated SEM image analysis with physics-based DLS/RPS size estimation and GUM uncertainty quantification"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Imoleayomide Ajayi", email = "i.ajayi@lboro.ac.uk"}
+]
+keywords = [
+    "SEM", "particle size", "image analysis", "DLS",
+    "dynamic light scattering", "resistive pulse sensing",
+    "measurement uncertainty", "GUM", "pharmaceutical"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "scikit-image>=0.21",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "Pillow>=10.0",
+    "reportlab>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+docs = [
+    "sphinx>=7.0",
+    "sphinx-rtd-theme>=1.3",
+]
+
+[project.scripts]
+particle-pipeline = "particle_pipeline.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/imoleayomide/particle-pipeline"
+Documentation = "https://particle-pipeline.readthedocs.io"
+Repository = "https://github.com/imoleayomide/particle-pipeline"
+Issues = "https://github.com/imoleayomide/particle-pipeline/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["particle_pipeline*"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "I"]

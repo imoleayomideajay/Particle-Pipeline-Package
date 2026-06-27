@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "particle-pipeline: Automated SEM image analysis with physics-based DLS/RPS size estimation and GUM-compliant measurement uncertainty quantification"
+authors:
+  - family-names: "Ajayi"
+    given-names: "Imoleayomide"
+    affiliation: "Loughborough University"
+version: 1.2.0
+date-released: 2025-06-27
+license: MIT
+repository-code: "https://github.com/REPLACE-WITH-YOUR-USERNAME/particle-pipeline"
+abstract: >-
+  An open-source Python pipeline for automated scanning electron
+  microscopy (SEM) particle size analysis. Implements adaptive
+  threshold selection, watershed separation of touching particles,
+  per-particle morphometry, Chan-Vese sub-pixel boundary refinement,
+  physics-based cross-technique size estimation (Perrin-corrected DLS
+  hydrodynamic diameter and prolate-spheroid RPS volume-equivalent
+  diameter), and a seven-component GUM-compliant measurement
+  uncertainty budget.
+keywords:
+  - scanning electron microscopy
+  - particle size analysis
+  - image segmentation
+  - dynamic light scattering
+  - resistive pulse sensing
+  - measurement uncertainty
+  - GUM
+  - watershed segmentation
+  - microplastics
+  - nanoparticles
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Ajayi"
+      given-names: "Imoleayomide"
+  title: "From SEM Image to Particle Size Report: A Practical Primer on Automated Segmentation, Multi-Technique Size Comparison, and Metrologically Traceable Uncertainty Quantification"
+  journal: "Journal of Microscopy"
+  year: 2025
+  notes: "Primers in Microscopy special issue (submitted)"
